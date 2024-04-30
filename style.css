@@ -1,0 +1,181 @@
+/* Import Google Font - Popping */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: rgb(1, 255, 238);
+}
+
+.container{
+    perspective: 1000pxs;
+}
+
+.Card{
+    position: relative;
+    width: 430px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.front, .back{
+    position: absolute;
+    width: 430px;
+    height: 250px;
+    border-radius: 12px;
+    backface-visibility: hidden;
+}
+.front{
+   background-image: url(background.jpeg);
+   background-size: cover;   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   transform: rotateY(0deg);
+   
+}
+.lef{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+   
+}
+.bank img {
+    width: 150px;
+    height: 50px;
+    display: block;
+    padding-right: 60px;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+}
+
+.bank {
+    display: flex;
+   
+}
+
+.chip img {
+    width: 55px;
+    margin-top: 0px;
+    padding-left: 30px;
+    margin-bottom: -20px;
+    padding-top: 20px;
+    
+}
+
+.number h2 {
+    margin-bottom: 0px;
+    padding-left: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: 20px;
+}
+.valid-date {
+    display: flex;
+    margin-bottom: -20px;
+    padding-left: 20px;
+}
+.valid-date pre {
+    font-size: x-small;
+   
+}
+
+h3 {
+    margin-top: 10px;
+}
+.rupay {
+    display: flex;
+}
+.rupay img {
+    display: flex;
+    width: 130px;
+    height: 30px;
+    padding-top: 20px;
+    padding-left: 130px;
+}
+
+.name {
+    display: flex;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding-left: 30px;
+}
+.name h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.name h3 {
+    margin-left: 250px;
+    margin-top: 10px;
+    font-style: italic;
+}
+.back{
+    background-image: url(background.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: rotateY(180deg);
+}  
+
+.top {
+    display: block;
+    font-size: x-small;
+    padding-bottom: 80px;
+}   
+ 
+.top pre {
+    padding-left: 10px;
+    margin-top: 70px;
+}
+.var {
+    width: 430px;
+    height: 50px;
+    background-color: black;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.vcc {
+    width: 250px;
+    height: 40px;
+    background-color: rgb(249, 249, 249);
+    margin-left: 10px;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.vcc-number {
+    width: 30px;
+    height: 35px;
+    background-color: white;
+    margin-left: 250px;
+    padding-right: 30px;
+    margin-top: 2.5px;
+}
+
+.vcc-number p {
+    padding-bottom: 100px;
+    font-size: x-large;
+    font-style: italic;
+    margin-top: -1px;
+    color: black;
+    
+}
+
+.top p {
+    padding-left: 20px;
+}
+
+.container:hover .Card{
+    transform: rotateY(180deg);
+}
